@@ -1,0 +1,86 @@
+body {
+	background : #848484;
+}
+
+.readStyle {
+	
+}
+
+.readStyle h2{
+    width: 132px;
+    display: block;
+    margin: auto;
+    margin-bottom:15px;
+}
+
+.readStyle img{
+	border: 6px solid;
+	width: 150px;
+	height:150px;
+}
+
+.readStyle td{
+	font-size:21px;
+}
+
+.readStyle .titleBox {
+	width: 100%;
+    vertical-align: top;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.editBox {
+	float:right;
+}
+
+.buttonBox {
+	    float: right;
+	    width: 225px;
+}
+/* button */
+button, button a, .button{
+  position:relative;
+  /* style|variant|weight|size/line-height|family */
+  font: 500 14px Arial;
+  letter-spacing: 0.5px;
+  color:#fff !important;
+  border: 0;
+  border-radius: 5px;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+button, .button{
+  min-width: 100px;
+  margin: 10px 5px;
+  padding:8px 10px;
+  background-color: #0092ba;/* for non linear-gradient browsers */
+  background: linear-gradient(to bottom, #24A1C3 5%, #0092BB 100%) repeat scroll 0 0 #24A1C3;
+}
+
+.button{display:inline-block;min-width:80px;text-align:center;white-space:nowrap;}
+
+button:hover,a.button:hover{
+  background:linear-gradient(to bottom, #0092BB 5%, #24A1C3 100%) repeat scroll 0 0 #0092BB;
+}
+button:active{top:1px;}
+
+/* input */
+
+
+input[type=text]{
+    width:400px;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }

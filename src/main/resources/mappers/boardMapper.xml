@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.js.mapper.BoardMapper">
+	<select id="listAll" resultType="com.inhatc.domain.BoardVO">
+	<![CDATA[
+		select l_no, l_title, l_date, l_picture, id
+		from lee_board
+		order by l_no
+		]]>
+	</select>
+
+	<select id="listCri" resultType="com.inhatc.domain.BoardVO">
+	<![CDATA[
+		select l_no, l_title, l_date, l_picture, id
+		from lee_board
+		order by l_no desc
+		limit #{startPage}, #{pagePost}
+	]]>
+	</select>
+
+	<select id="lastPostNo" resultType="integer">
+		select l_no
+		from lee_board
+		order by l_no desc
+		limit #{pagePost}, #{page}
+	</select>
+
+	<select id="moreList" resultType="com.inhatc.domain.BoardVO">
+	<![CDATA[
+		SELECT l_no, l_title, l_date, l_picture, id
+		FROM lee_board 
+		order by l_no desc 
+		limit 8 OFFSET #{cri}
+	]]>
+	</select>
+	
+	<insert id="CreateBoard">
+		insert into lee_board(l_picture)
+		values (#{filename})
+	</insert>
+	
+	<update id="createDetail">
+		update lee_board
+		set l_title = #{l_title}, l_content = #{l_content}, id = #{id}
+		where l_picture = #{l_picture}
+	</update>
+	
+	<insert id="uploadFile">
+		insert into img_file(f_name)
+		values (#{filename})
+	</insert>
+	
+	<select id="getLbn" resultType="Integer">
+		SELECT f_no 
+		FROM img_file 
+		ORDER BY f_no DESC 
+		LIMIT 1
+	</select>
+	
+	<select id="getNlbn" resultType="Integer">
+		SELECT f_no 
+		FROM img_file 
+		WHERE l_no IS NULL 
+		limit 1
+	</select>
+	
+	<update id="getColum">
+	
+	</update>
+</mapper>

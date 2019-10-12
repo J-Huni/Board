@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.js.mapper.ReadMapper">
+	<select id="readPost" resultType="com.inhatc.domain.BoardVO">
+			select *
+			from lee_board
+			where l_no = #{l_no}
+	</select>
+	
+	<delete id="deletePost">
+		delete from lee_board
+		where l_no = ${l_no}
+	</delete>
+	
+	<update id="editPost">
+		update lee_board
+		set l_title=#{l_title}, l_content=#{l_content}
+		where l_no=#{l_no} 
+	</update>
+</mapper>

@@ -1,0 +1,161 @@
+/* #RESET
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* #BASE TYPOGRAPHY/STYLING
+================================================== */
+body {
+	  font-family: Helvetica, Arial, sans-serif;
+	  background-color:#333;
+}
+
+
+/* #CLEARFIX
+================================================== */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* #HEADER
+================================================== */
+#LogoImg{
+	display: block;
+    margin: auto;
+    width: 300px;
+}
+
+#head {
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+header {
+    background: #333;
+    text-align: center;
+    padding: 1.5em 1em 1em 1em;
+}
+
+header #logo a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+/* #NAVIGATION
+================================================== */
+
+#mainnav {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: .05em;
+}
+
+#mainnav #menu {
+    display: none;
+    padding: .8em 1.5em;
+    cursor: pointer;
+}
+
+
+#mainnav ul {
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+#mainnav ul li {
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+#mainnav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: .9em 1.5em .8em 1.5em;
+}
+
+#mainnav ul li a:hover {
+    color: #000;
+    background: #aaa;
+}
+
+.content {
+	  padding: 1.5em;
+}
+
+
+/* MEDIA QUERIES
+Description: Define screen-size breakpoints here.
+(e.g. Desktop, Tablet, Mobile)
+===================================== */
+
+/* Tablet (Between 768px - 992px)*/
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/* MOBILE (Smaller than 768px)*/
+@media all and (max-width: 767px) {
+	
+    #mainnav #menu {
+        display: block;
+    }
+
+    #mainnav ul {
+        display: none;
+        background: #666;
+        padding: 1em;
+        text-align: left;
+    }
+    #mainnav ul li {
+        display: block;
+    }
+
+    #mainnav ul li a {
+        display: block;
+        padding: .75em 1.5em .5em 1.5em;
+    }
+
+}
+
+/* imgMainForm */
+
+.imgBox {
+	display: block;
+    margin: auto;
+    width: 820px;
+}
+
+.actImg {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    left: 40vw;
+    top: 30vw;
+}
+
+.actImg img{
+	width: 260px;
+    border-radius: 20px;
+}
+
+.subImg {
+	position: absolute;
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+.subImg img {
+	width: 800px;
+}

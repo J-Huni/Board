@@ -1,0 +1,185 @@
+.CreateBrd{
+	float: right;
+    margin-right: 300px;
+}
+
+.CreateBrd a{
+	color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ListBox{
+	display: block;
+    margin: auto;
+    width: 1040px;
+    margin-top: 21px;
+}
+
+.ListStyle {
+	float: left;
+	margin: auto;
+	display: block;
+	width: 222px;
+	height: 320px;
+	background: #848484;
+    border-radius: 13px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ListStyle ul {
+	list-style : none;
+}
+
+.ListStyle li {
+	text-align : center;
+}
+
+.ListStyle img {
+	height: 90%;
+	width: 100%;
+	padding: 10 10 10 10;
+}
+
+.ListStyle .imgContain {
+	width: 200px;
+	height: 237px;
+}
+
+.ListStyle .titleContain{
+	border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-left: 10;
+    margin-right: 10;
+    padding: 5;
+}
+
+.ListStyle a{
+	text-decoration: none;
+    color: white;
+}
+
+.ListBtn {
+	float: left;
+}
+
+.btnMore {
+	display:block;
+	margin:auto;
+	width:1000px;
+}
+
+button, button a, .button{
+  position:relative;
+  /* style|variant|weight|size/line-height|family */
+  font: 500 14px Arial;
+  letter-spacing: 0.5px;
+  color:#fff !important;
+  border: 0;
+  border-radius: 5px;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+button, .button{
+  min-width: 100px;
+  margin: 10px 5px;
+  padding:8px 10px;
+  background-color: #0092ba;/* for non linear-gradient browsers */
+  background: linear-gradient(to bottom, #24A1C3 5%, #0092BB 100%) repeat scroll 0 0 #24A1C3;
+}
+
+.button{display:inline-block;min-width:80px;text-align:center;white-space:nowrap;}
+
+button:hover,a.button:hover{
+  background:linear-gradient(to bottom, #0092BB 5%, #24A1C3 100%) repeat scroll 0 0 #0092BB;
+}
+button:active{top:1px;}
+
+/* CreateBrd */
+.tablebox {
+	margin: auto;
+    display: block;
+    width: 800px;
+    height: 177px;
+    background-color: #848484;
+    padding-top: 30px;
+    margin-top: 15px;
+}
+
+.userbox {
+	display: none;
+    margin: auto;
+    width: 700;
+    height: 300;
+    background: white;
+    border-radius: 30px;
+    padding: 10 10 10 10;
+}
+
+.userbox td {
+	text-align:right;
+	padding-right: 12px;
+	width: 33px;
+}
+
+.userBox h1 {
+	margin: auto;
+    display: block;
+    width: 128px;
+}
+
+.userBox .liContent {
+	vertical-align: top;
+    padding-top: 15px;
+}
+.userBox table {
+	border-top: 0.5px solid gray;
+    margin-top: 10;
+    border-bottom: 0.5px solid gray;
+    padding: 10 10 10 10;
+}
+
+.fileBox {
+	display: block;
+    margin: auto;
+    width: 700px;
+    height: 126px;
+    background: white;
+    border-radius: 30px;
+    padding: 10 10 10 10;
+}
+
+.fileBox h1 {
+	margin: auto;
+    display: block;
+    width: 201px;
+}
+
+.fileBox table {
+	border-top: 0.5px solid gray;
+    margin-top: 10px;
+    border-bottom: 0.5px solid gray;
+}
+
+.fileBox input {
+	width: 568px;
+}
+
+input[type=text]{
+    width:611px;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
